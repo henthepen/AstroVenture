@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+    html{
+        scroll-behavior: smooth;
+    }
+
+    body{
+        margin: 0;
+    }
+
+    .TopBar{
+        position: fixed;
+        width: 100%;
+        height: 12.5vh;
+        left: 0px;
+        top: 0px;
+        background: #1E0253;
+        border-bottom-left-radius: 4%;
+        border-bottom-right-radius: 4%;
+    }
+
+    .Placeholder{
+        width: 100%;
+        height: 8.5vh;
+        margin: 0;
+    }
+
+    .TopMenu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .TopMenuLink{
+        color: #fffcff;
+        font-family: 'Tenor Sans', sans-serif;
+        font-size: 1.2rem;
+        text-decoration: none;
+    }
+
+    .Logo{
+        width: 16%;
+        height: 12vh;
+        background-image: url(Logo.png);
+        background-size: cover;
+        background-position: center; 
+    }
+
+    .Slide1{
+        background-image: url(Slide\ 1.jpg);
+        transition: 1s;
+    }
+
+    .Slide2{
+        background-image: url(Slide\ 2.jpg);
+        transition: 1s;
+    }
+
+    .Slide3{
+        background-image: url(Slide\ 3.jpg);
+        transition: 1s;
+    }
+
+    .Presentation{
+        width: calc(100% - 60px);
+        height: calc(90vh - 45px);
+        background-color: #0E081F;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-size: cover;
+        background-position: center; 
+        transition: 1s;
+    }
+
+    .PresTitle{
+        color: #fffcff;
+        font-family: 'Tenor Sans', sans-serif;
+        font-size: 2rem;
+        font-weight: 100;
+    }
+
+    .PresRow{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .PresText{
+        color: #fffcff;
+        background-color: rgba(30, 2, 83, 0.33);
+        font-family: 'Tenor Sans', sans-serif;
+        font-size: 1.2rem;
+        width: 20%;
+        padding: 20px;
+        border-radius: 3%;
+        border-style: solid;
+        border-color: #fffcff;
+    }
+
+    .LeftArrow{
+        width: 1.5%;
+        height: 7%;
+        border-style: none;
+        background-color: transparent;
+        background-image: url(LeftArrow.png);
+        background-size: cover;
+        background-position: center; 
+    }
+
+    .RightArrow{
+        width: 1.5%;
+        height: 7%;
+        border-style: none;
+        background-color: transparent;
+        background-image: url(RightArrow.png);
+        background-size: cover;
+        background-position: center; 
+    }
+
+    .FoldablesSec{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: #fffcff;
+        align-items: center;
+        padding-bottom: 10vh;
+    }
+
+    .FoldablesSecHeader{
+        margin-top: 60px;
+        margin-bottom: 40px;
+        font-family: 'Raleway', sans-serif;
+        color: #131515;
+        font-weight: 500;
+    }
+
+    .Foldable{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .Fold{
+        height: 6vh;
+        width: 25%;
+        color: #fffcff;
+        overflow: hidden;
+        transition: max-height 3s ease-in-out;
+        max-height: 6vh;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .NewFold{
+        height: auto;
+        max-height: 1000px;
+    }
+
+    #Fold1{
+        background-color: #1E0253;
+    }
+
+    #Fold2{
+        background-color: #C637A0;
+    }
+
+    #Fold3{
+        background-color: #0E081F;
+    }
+
+    .FoldHeader{   
+        font-family: 'Tenor Sans', sans-serif;
+        margin-top: 3%;
+    }
+
+    .FoldText{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.1rem;
+    }
+
+    .FoldImageDiv{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .FoldImage{
+        width: 100%;
+        height: auto;
+    }
+
+    .hidden{
+        display: none;
+    }
+
+    .LoadingWheel{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-color: transparent;
+        position: fixed;
+        top: calc(50% - 50px);
+        left: calc(50% - 50px);
+        border: 16px solid #c637a0;
+        border-top: 16px solid transparent;
+        animation: spin 1.5s linear infinite;
+        animation-timing-function: ease-in-out;
+    }
+
+    .ContactUsSection{
+        width: 100%;
+        background-color: #0E081F;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+
+    .ContactUsHeader{
+        margin-top: 55px;
+        margin-bottom: 40px;
+        font-family: 'Raleway', sans-serif;
+        color: #fffcff;
+        font-weight: 500;
+    }
+
+    .ContactUsForm{
+        width: 30%;
+        height: auto;
+        background-color: #fffcff;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .FormHeader{
+        font-family: 'Tenor Sans', sans-serif;
+        color: #131515;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .FName{
+        font-family: 'Tenor Sans', sans-serif;
+        color: #131515;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    .FInput{
+        width: 100%;
+        font-size: 1rem;
+        font-family: 'Tenor Sans', sans-serif;
+        color: #fffcff;
+        background-color: #4b3475;
+        border-style: none;
+        padding: 10px;
+    }
+
+    textarea{
+        display: block;
+        resize: none;
+        font-size: 1rem;
+        font-family: 'Tenor Sans', sans-serif;
+        color: #fffcff;
+        background-color: #4b3475;
+        border-style: none;
+        padding: 10px;
+    }
+
+    .FSubmit{
+        width: 50%;
+        height: 7vh;
+        font-size: 1.2rem;
+        color: #fffcff;
+        background-color: #4b3475;
+        font-family: 'Tenor Sans', sans-serif;
+        padding: 10px;
+        border: none;
+        margin-bottom: 25px;
+    }
+
+    .addInfo{
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 5px;
+        
+    }
+
+    .AddInfoText{
+        width: 200px;
+        font-family: 'Tenor Sans', sans-serif;
+        font-size: 1rem;
+        margin-top: 0px;
+        color: #131515;
+    }
+
+    .ThankYouText{
+        width: 60%;
+        font-family: 'Tenor Sans', sans-serif;
+        font-size: 1.1rem;
+        margin-top: 0px;
+        color: #131515;
+    }
+
+    svg{
+        margin-right: 20px;
+    }
+
+    #Geo{
+        margin-right: 25px;
+        margin-left: 5px;
+    }
+
+    .TourSec{
+        width: calc(100% - 40px);
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 20px;
+        background-color: #1E0253;
+        transition: 0.5s;
+    }
+    
+    .TourHeader{
+        color: #fffcff;
+        font-family: 'Raleway', sans-serif;
+        font-size: 2rem;
+        font-weight: 100;
+        margin-bottom: 60px;
+    }
+    
+    .Tours{
+        height: 30vh;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .TourThing{
+        width: 20%;
+        height: 100%;
+        background-color: #fffcff;
+        transition: 0.5s;
+        overflow: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px;
+        border: double;
+        border-color: #0E081F;
+        border-width: 8px;
+    }
+    
+    .TourThing:hover{
+        width: 50%;
+        height: 68vh;
+        z-index: 2;
+    }
+    
+    .TourThingHeader{
+        font-family: 'Tenor Sans', sans-serif;
+        font-weight: 500;
+        margin-top: 0;
+        font-size: 1.4rem;
+        transition: 0.5s;
+    }
+    
+    .TourThingColumn{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .TourThingRow{
+        width: 40%;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .TourThingButton{
+        width: 50%;
+        height: 20%;
+        background-color: #C637A0;
+        color: #fffcff;
+        border: none;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.2rem;
+    }
+    
+    .TourThingImageDiv{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    
+    .TourThingImage{
+        width: 100%;
+        height: auto;
+        transition: 0.5s;
+    }
+    
+    .TourThingText{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 0.9rem;
+    }
+    
+    .Shade{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 1;
+    }

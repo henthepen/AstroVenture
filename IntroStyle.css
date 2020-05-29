@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.Canv{
+    background-color: #0E081F;
+    margin: 0;
+    transition: 5s;
+}
+
+.LoadingWheel{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: transparent;
+    position: absolute;
+    top: calc(25% - 25px);
+    left: calc(50% - 95px);
+    border: 16px solid #c637a0;
+    border-top: 16px solid transparent;
+    animation: spin 1.5s linear infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.hidden{
+    display: none;
+}
+
+.introButton{
+    position: absolute;
+    top: calc(80% - 6vh);
+    left: calc(50% - 7.5vw);
+    width: 15vw;
+    height: 6vh;
+    background-color: #c637a0;
+    border-radius: 10%;
+    border-style: solid;
+    border-color: #c0c0c0;
+    border-width: 4px;
+    box-shadow: 7px 7px 0px 0px rgba(0,0,0,0.75);
+    transition: 1s;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 1.5rem;
+    color: #fffcff
+}
+
+.Clicked{
+    position: absolute;
+    top: calc(80% - 6vh);
+    left: calc(50% - 7.5vw);
+    width: 15vw;
+    height: 6vh;
+    background-color: #c637a0;
+    border-width: 4px;
+    border-radius: 10%;
+    border-style: solid;
+    border-color: #C0C0C0;
+    transition: 1s;
+    box-shadow: 8px 8px 0px 0px rgba(0,0,0,0.75) inset;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 1.5rem;
+    color: #fffcff;
+}
